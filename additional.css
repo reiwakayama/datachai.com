@@ -156,7 +156,8 @@ article {
 }
 
 .dc-mini-box {
-    min-height: 320px;
+display: flex;
+flex-direction: column;
 }
 
 .dc-post-image,
@@ -164,6 +165,70 @@ article {
     width: 100%;
     border-radius: 8px;
     margin-bottom: 10px;
+}
+
+.dc-testimonial-card {
+    display: flex;
+    gap: 18px;
+    text-align: left;
+    align-items: flex-start;
+    margin-top: 8px;
+}
+
+.dc-testimonial-logo {
+    flex: 0 0 80px;
+}
+
+.dc-testimonial-logo img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.dc-testimonial-main {
+    flex: 1;
+}
+
+.dc-testimonial-text {
+    font-style: italic;
+    line-height: 1.5;
+    margin: 0 0 15px 0;
+}
+
+.dc-testimonial-author {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#testimonial-title {
+    font-weight: normal;
+    font-size: 14px;
+    color: #666;
+}
+
+.dc-testimonial-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+		margin-top: auto;
+		padding-top: 20px;
+}
+
+.dc-testimonial-buttons button {
+    background: #ffffff;
+    border: 1px solid #071419;
+    border-radius: 3px;
+    padding: 4px 12px;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    line-height: 1.2;
+    cursor: pointer;
+  	background: #f3f3f3;
+}
+
+.dc-testimonial-buttons button:hover {
+    background: #f2f2f2;
 }
 
 .dc-button,
@@ -215,4 +280,21 @@ button:hover {
     .dc-hero h1 {
         font-size: 32px;
     }
+}
+
+.dc-call-box {
+    padding: 6px 12px 0;
+}
+
+.dc-call-box h2 {
+    margin: 0 0 4px 0;
+    line-height: 1.1;
+}
+
+.dc-calendly {
+    margin-top: -40px;
+}
+
+.dc-calendly .calendly-inline-widget {
+    margin: 0 auto;
 }
