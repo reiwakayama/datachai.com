@@ -1,1 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
 
+html,
+body,
+#container,
+#main,
+#content,
+#primary,
+#secondary,
+#wrapper,
+.wrap,
+.site,
+.l-content,
+.l-main,
+.main,
+.content,
+.page,
+.post,
+.entry,
+.entry-content,
+article {
+    background-color: #d5eaf6 !important;
+}
+
+.dc-page {
+    background: transparent !important;
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    font-family: Georgia, serif;
+}
+
+.dc-top-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin-bottom: 8px;
+    align-items: stretch;
+}
+
+.dc-box {
+    background: #ffffff !important;
+    border: 1.5px solid #071419;
+    border-radius: 12px;
+    padding: 14px 16px 16px;
+    margin: 4px 0;
+    box-sizing: border-box;
+}
+
+.dc-box h1,
+.dc-box h2,
+.dc-box h3,
+.dc-box p {
+    margin-top: 0;
+}
+
+.dc-hero h1,
+.dc-box > h2,
+.dc-catch {
+    font-family: 'Merriweather', serif;
+}
+
+.dc-hero,
+.dc-client-box {
+    text-align: left;
+    min-height: 210px;
+}
+
+.dc-hero h1 {
+    font-size: 42px;
+    margin: 0 0 26px 0;
+}
+
+.dc-catch {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 0 14px 0;
+}
+
+.dc-hero p {
+    margin-bottom: 0;
+}
+
+.dc-client-box h2,
+.dc-box > h2 {
+    font-size: 22px;
+    line-height: 1.25;
+    margin: 0 0 16px 0;
+}
+
+.dc-logos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px 18px;
+    align-items: center;
+    justify-items: center;
+    margin: 0;
+}
+
+.dc-logo-cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 42px;
+}
+
+.dc-logo-cell img,
+.dc-logos img {
+    max-width: 105px;
+    max-height: 38px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0;
+}
+
+.dc-services-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 8px;
+}
+
+.dc-service {
+    background: #ffffff;
+    border: 1.5px solid #071419;
+    border-radius: 12px;
+    padding: 16px 18px;
+    text-align: left;
+}
+
+.dc-service h3 {
+    font-family: Georgia, serif;
+    margin: 0 0 12px 0;
+}
+
+.dc-service p {
+    margin-bottom: 0;
+}
+
+.dc-two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 8px;
+}
+
+.dc-mini-box {
+    min-height: 320px;
+}
+
+.dc-post-image,
+.dc-testimonial-image {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.dc-button,
+button {
+    background: white;
+    border: 1.5px solid #071419;
+    border-radius: 5px;
+    padding: 7px 14px;
+    margin: 5px;
+    cursor: pointer;
+    color: #071419;
+    text-decoration: none;
+    display: inline-block;
+    font-family: Georgia, serif;
+}
+
+.dc-button:hover,
+button:hover {
+    background: #eef7fc;
+}
+
+.dc-calendly iframe {
+    width: 100%;
+    height: 700px;
+    border: none;
+}
+
+.dc-muted {
+    color: #555;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .dc-top-grid,
+    .dc-services-grid,
+    .dc-two-col {
+        grid-template-columns: 1fr;
+    }
+
+    .dc-logos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .dc-hero,
+    .dc-client-box {
+        min-height: auto;
+    }
+
+    .dc-hero h1 {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+}
