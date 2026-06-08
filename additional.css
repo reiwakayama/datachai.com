@@ -44,7 +44,7 @@ article {
     background: #ffffff !important;
     border: 1.5px solid #071419;
     border-radius: 12px;
-    padding: 14px 16px 16px;
+    padding: 0 16px 16px;
     margin: 4px 0;
     box-sizing: border-box;
 }
@@ -69,18 +69,24 @@ article {
 }
 
 .dc-hero h1 {
+    padding-top: 20px;	
+    padding-left: 10px;			
     font-size: 42px;
-    margin: 0 0 26px 0;
+    margin: 16px 0 8px 0;
+    line-height: 1;
 }
 
 .dc-catch {
     font-size: 16px;
     font-weight: bold;
-    margin: 0 0 14px 0;
+    margin: 0 0 4px 0;
+    display: block;
 }
 
 .dc-hero p {
-    margin-bottom: 0;
+    padding-left: 10px;		
+    margin: 0;
+    line-height: 1.35;
 }
 
 .dc-client-box h2,
@@ -134,7 +140,8 @@ article {
 
 .dc-service h3 {
     font-family: Georgia, serif;
-    margin: 0 0 12px 0;
+    margin-top: 0;
+    margin-bottom: 15px;
 }
 
 .dc-service p {
@@ -207,6 +214,5 @@ button:hover {
 
     .dc-hero h1 {
         font-size: 32px;
-        margin-bottom: 20px;
     }
 }
