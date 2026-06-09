@@ -18,16 +18,40 @@ body,
 .post,
 .entry,
 .entry-content,
-article {
+article,
+.container,
+.wrapper_menu {
+    background-color: #ffffff !important;
+}
+
+body:has(.dc-page),
+body:has(.dc-page) #container,
+body:has(.dc-page) #main,
+body:has(.dc-page) #content,
+body:has(.dc-page) #primary,
+body:has(.dc-page) #secondary,
+body:has(.dc-page) #wrapper,
+body:has(.dc-page) .wrap,
+body:has(.dc-page) .site,
+body:has(.dc-page) .l-content,
+body:has(.dc-page) .l-main,
+body:has(.dc-page) .main,
+body:has(.dc-page) .content,
+body:has(.dc-page) .page,
+body:has(.dc-page) .post,
+body:has(.dc-page) .entry,
+body:has(.dc-page) .entry-content,
+body:has(.dc-page) article,
+body:has(.dc-page) .container,
+body:has(.dc-page) .wrapper_menu {
     background-color: #d5eaf6 !important;
 }
 
 .dc-page {
     background: transparent !important;
-    max-width: 780px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 10px;
-    text-align: center;
     font-size: 16px;
     font-family: Georgia, serif;
 }
@@ -150,17 +174,81 @@ article {
 
 .dc-two-col {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: calc(40% - 5px) calc(60% - 5px);
     gap: 10px;
     margin-top: 8px;
+    align-items: stretch;
 }
 
 .dc-mini-box {
-display: flex;
-flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
 }
 
-.dc-post-image,
+.dc-post-buttons,
+.dc-testimonial-buttons {
+    margin-top: auto;
+}
+
+.dc-featured-post-card {
+    text-align: left;
+    margin-top: 8px;
+}
+
+.dc-featured-post-card img {
+    width: 100%;
+    max-height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.dc-featured-post-card h3 {
+    margin: 0 0 10px 0;
+}
+
+.dc-featured-post-card {
+    margin-top: 0;
+}
+
+.dc-featured-post-card h3 a {
+    color: #071419;
+    text-decoration: none;
+}
+
+.dc-featured-post-card h3 a:hover {
+    text-decoration: underline;
+}
+
+#post-excerpt {
+    margin: 0;
+    line-height: 1.45;
+}
+
+.dc-post-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: auto;
+}
+
+.dc-post-buttons button {
+    background: #f3f3f3;
+    border: 1px solid #071419;
+    border-radius: 3px;
+    padding: 4px 12px;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    line-height: 1.2;
+    cursor: pointer;
+}
+
+.dc-post-buttons button:hover {
+    background: #f2f2f2;
+}
+
 .dc-testimonial-image {
     width: 100%;
     border-radius: 8px;
@@ -210,8 +298,7 @@ flex-direction: column;
     display: flex;
     justify-content: center;
     gap: 16px;
-		margin-top: auto;
-		padding-top: 20px;
+    margin-top: auto;
 }
 
 .dc-testimonial-buttons button {
@@ -283,7 +370,7 @@ button:hover {
 }
 
 .dc-call-box {
-    padding: 6px 12px 0;
+    padding: 6px 12px 24px;
 }
 
 .dc-call-box h2 {
@@ -292,9 +379,115 @@ button:hover {
 }
 
 .dc-calendly {
-    margin-top: -40px;
+    margin-top: -30px;
 }
 
 .dc-calendly .calendly-inline-widget {
     margin: 0 auto;
+}
+
+.blog-side-image {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    margin: 20px 0;
+}
+
+.blog-side-image img {
+    width: 243px;
+    max-width: 35%;
+    height: auto;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+.blog-side-image p {
+    margin-top: 0;
+}
+
+@media (max-width: 768px) {
+    .blog-side-image {
+        flex-direction: column;
+    }
+
+    .blog-side-image img {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+.dc-mini-box {
+    position: relative;
+    min-height: 500px;
+    padding-bottom: 70px;
+}
+
+.dc-featured-post-card,
+.dc-testimonial-card {
+    height: auto;
+    min-height: 0;
+    overflow: visible;
+}
+
+.dc-post-buttons,
+.dc-testimonial-buttons {
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.dc-featured-post-card img {
+    max-height: 140px;
+    margin-bottom: 8px;
+}
+
+.dc-featured-post-card {
+    margin-top: 0;
+}
+
+.dc-featured-post-card h3,
+.dc-featured-post-card h3 a {
+    word-break: keep-all;
+    overflow-wrap: normal;
+    hyphens: none;
+}
+
+.dc-calendly {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    margin-top: -30px;
+}
+
+.dc-calendly .calendly-inline-widget {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    height: 650px !important;
+    margin: 0 auto;
+}
+
+.dc-calendly iframe {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+@media (max-width: 768px) {
+    .dc-call-box {
+        height: auto !important;
+        min-height: 0 !important;
+        padding-bottom: 36px !important;
+        overflow: hidden;
+    }
+
+    .dc-calendly,
+    .dc-calendly .calendly-inline-widget {
+        height: 720px !important;
+    }
 }
