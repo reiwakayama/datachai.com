@@ -369,8 +369,8 @@ button:hover {
     }
 }
 
-.dc-call-box {
-    padding: 6px 12px 24px;
+.dc-box {
+    padding: 0 16px 16px;
 }
 
 .dc-call-box h2 {
