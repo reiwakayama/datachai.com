@@ -530,3 +530,39 @@ button:hover {
 .dc-top-grid .dc-box {
     margin: 0;
 }
+
+/* Blog archive cards*/
+.post-list .entry-card-content,
+.grid .entry-card-content,
+#list .entry-card-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.post-list .entry-card-title,
+.grid .entry-card-title,
+#list .entry-card-title {
+    min-height: 3.2em;
+}
+
+/* Sidebar recent posts*/
+.widget_recent_entries a,
+.widget_recent_entries li,
+#side a {
+    word-break: normal;
+    overflow-wrap: normal;
+    hyphens: none;
+}
+
+/* Previous / Next*/
+.ptitle {
+    word-break: normal !important;
+    overflow-wrap: normal !important;
+    hyphens: none !important;
+}
+
+.ntitle {
+    word-break: normal !important;
+    overflow-wrap: normal !important;
+    hyphens: none !important;
+}
