@@ -113,6 +113,10 @@ body:has(.dc-page) .wrapper_menu {
     line-height: 1.35;
 }
 
+.dc-hero-text-mobile {
+    display: none;
+}
+
 .dc-client-box h2,
 .dc-box > h2 {
     font-size: 22px;
@@ -193,15 +197,7 @@ body:has(.dc-page) .wrapper_menu {
 
 .dc-featured-post-card {
     text-align: left;
-    margin-top: 8px;
-}
-
-.dc-featured-post-card img {
-    width: 100%;
-    max-height: 160px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 10px;
+    margin-top: 0px;
 }
 
 .dc-featured-post-card h3 {
@@ -367,6 +363,17 @@ button:hover {
     .dc-hero h1 {
         font-size: 32px;
     }
+
+    .dc-hero-text-desktop {
+        display: none;
+    }
+
+    .dc-hero-text-mobile {
+        display: block;
+    }
+    .dc-two-col .dc-mini-box:last-child {
+        min-height: 550px;
+    }
 }
 
 .dc-box {
@@ -427,6 +434,7 @@ button:hover {
     height: auto;
     min-height: 0;
     overflow: visible;
+
 }
 
 .dc-post-buttons,
@@ -443,8 +451,20 @@ button:hover {
 }
 
 .dc-featured-post-card img {
-    max-height: 140px;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
     margin-bottom: 8px;
+}
+
+.dc-mini-box:first-child > h2 {
+    margin-bottom: -6px;
+}
+
+.dc-mini-box:first-child .dc-featured-post-card {
+    margin-top: 0;
 }
 
 .dc-featured-post-card {
