@@ -512,3 +512,21 @@ button:hover {
 			  margin-top: 10px;
     }
 }
+
+.dc-page > .dc-box,
+.dc-page > .dc-two-col,
+.dc-page > .dc-top-grid {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.dc-page > .dc-box:last-child,
+.dc-page > .dc-two-col:last-child,
+.dc-page > .dc-top-grid:last-child {
+    margin-bottom: 0;
+}
+
+.dc-two-col .dc-box,
+.dc-top-grid .dc-box {
+    margin: 0;
+}
