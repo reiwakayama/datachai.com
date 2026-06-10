@@ -344,8 +344,9 @@
     width: 100vw;
     margin-left: calc(50% - 50vw);
     margin-right: calc(50% - 50vw);
-    border-top: 10px solid #ffffff;
-    padding: 28px 0 50px;
+
+    border-top: 0;
+    padding: 10px 0 50px;
 }
 
 .dc-related-inner {
@@ -358,7 +359,7 @@
     text-align: left;
     font-size: 42px;
     font-weight: normal;
-    margin: 0 0 36px;
+    margin: 0 0 32px;
     font-family: 'Cormorant Garamond', serif;
 }
 
@@ -446,4 +447,24 @@
     .dc-resource-card img {
         height: 200px;
     }
+}
+
+.dc-resource-card > a {
+    display: block !important;
+    line-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.dc-resource-card > a img {
+    display: block !important;
+    margin: 0 !important;
+}
+
+.dc-resource-content {
+    padding-top: 0 !important;
+}
+
+.dc-resource-content h3 {
+    margin-top: 0 !important;
 }
