@@ -211,7 +211,7 @@
 .dc-faq-section h2 {
     font-size: 38px;
     font-weight: normal;
-    margin: 0 0 14px;
+    margin: 0 0 0 0;
     font-family: 'Cormorant Garamond', serif;
 }
 
@@ -257,7 +257,7 @@
 
 @media (max-width: 768px) {
     .dc-faq-section {
-        padding: 30px 20px;
+        padding: 0 0 30px;
     }
 
     .dc-faq-section h2 {
