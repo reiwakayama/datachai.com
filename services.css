@@ -1,0 +1,449 @@
+.dc-service-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+    font-family: Georgia, serif;
+    background: #ffffff;
+}
+
+.dc-service-page h1,
+.dc-service-page h2 {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.dc-service-hero.ppc {
+    background-image: url('https://lightgray-porcupine-487444.hostingersite.com/wp-content/uploads/2026/06/11062b_89e9aa03a53e4fffbf4a8e619e7a1f00mv2-scaled.avif');
+}
+
+.dc-service-hero.techseo {
+    background-image: url('TECHSEO_IMAGE_URL');
+}
+
+.dc-service-hero.crm {
+    background-image: url('CRM_IMAGE_URL');
+}
+
+.dc-service-page section {
+    margin-bottom: 0;
+}
+
+.dc-service-page h3 {
+    margin-bottom: 8px;
+}
+
+.dc-service-page p {
+    line-height: 1.6;
+}
+
+.dc-service-text {
+    max-width: 650px;
+}
+
+.dc-service-testimonial {
+    background: #ffffff;
+    padding: 30px 60px 30px;
+}
+
+.dc-testimonial-row {
+    display: flex;
+    align-items: center; 
+    gap: 16px;
+    max-width: 1100px;
+    padding-left: 40px;
+}
+
+.dc-testimonial-row img {
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
+    object-fit: contain;
+}
+
+.dc-testimonial-row blockquote {
+    margin: 0;
+    padding: 20px 24px;
+    font-size: 18px;
+    line-height: 1.7;
+    font-style: italic;
+    font-weight: 400;
+    border: 1px solid #e5e5e5;
+    border-radius: 6px;
+}
+
+.dc-service-page .dc-service-testimonial .dc-testimonial-author {
+    margin: 10px 0 0 184px !important;
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    line-height: 1.4 !important;
+}
+
+.dc-service-page .dc-service-testimonial .dc-testimonial-author span {
+    font-size: 17px !important;
+    font-weight: 700 !important;
+}
+
+.dc-testimonial-mobile-logo {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    .dc-service-page .dc-service-testimonial {
+        padding: 0 20px 12px !important;
+    }
+
+    .dc-testimonial-row > img {
+        display: none;
+    }
+
+    .dc-service-page .dc-testimonial-row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .dc-testimonial-row blockquote {
+        font-size: 17px;
+        padding: 10px;
+        text-align: left;
+        max-width: 100%;
+
+        margin: 0 auto !important;
+    }
+
+    .dc-service-page .dc-service-testimonial .dc-testimonial-author {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        gap: 14px;
+        width: 100%;
+
+        margin: 14px 0 0 0 !important;
+
+        text-align: left;
+        font-size: 16px;
+    }
+
+    .dc-testimonial-mobile-logo {
+        display: block;
+        width: 50px;
+        height: 50px;
+        object-fit: contain;
+        flex-shrink: 0;
+    }
+
+    .dc-testimonial-author div {
+        text-align: left;
+    }
+
+}
+.dc-service-hero {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 0;
+    overflow: hidden;
+    min-height: 420px;
+
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+}
+
+.dc-service-overlay {
+    background: rgba(255,255,255,0.80);
+    min-height: 420px;
+    display: flex;
+    align-items: center;
+}
+
+.dc-service-content {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 45px 30px;
+}
+
+.dc-service-content h1 {
+    margin: 0 0 28px;
+    font-size: 56px;
+    line-height: 1;
+    white-space: nowrap;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.dc-service-content p {
+    line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+
+    .dc-service-overlay {
+        min-height: auto;
+    }
+
+    .dc-service-content {
+        padding: 30px 20px;
+    }
+
+    .dc-service-content h1 {
+        white-space: normal;
+        font-size: 38px;
+    }
+}
+
+.dc-faq-section {
+    background: #e4e2e2;
+
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+
+    border-top: 10px solid #ffffff;
+    padding-bottom: 30px;  
+}
+
+.dc-faq-section h2 {
+    font-size: 38px;
+    font-weight: normal;
+    margin: 0 0 14px;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.dc-faq-section details {
+    border-bottom: 1px solid rgba(0,0,0,0.15);
+    padding: 12px 0;
+}
+
+.dc-faq-section summary {
+    cursor: pointer;
+    font-family: Georgia, serif;
+    font-size: 18px;
+    font-weight: 550;
+    color: #0057ff;
+    list-style: none;
+}
+
+.dc-faq-section summary::-webkit-details-marker {
+    display: none;
+}
+
+.dc-faq-section summary::after {
+    content: "+";
+    float: right;
+    font-size: 24px;
+}
+
+.dc-faq-section details[open] summary::after {
+    content: "−";
+}
+
+.dc-faq-section p {
+    font-size: 18px;
+    line-height: 1.65;
+    margin: 12px 0 0;
+}
+
+.dc-faq-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+@media (max-width: 768px) {
+    .dc-faq-section {
+        padding: 30px 20px;
+    }
+
+    .dc-faq-section h2 {
+        font-size: 32px;
+        margin-bottom: 24px;
+    }
+
+    .dc-faq-section summary {
+        font-size: 20px;
+    }
+
+    .dc-faq-section p {
+        font-size: 16px;
+    }
+}
+
+.dc-service-page .dc-button {
+    background: #0066ff !important;
+    color: #ffffff !important;
+    border: none !important;
+    border-radius: 14px !important;
+    padding: 10px 22px !important;
+    font-weight: 600;
+    text-decoration: none !important;
+    display: inline-block;
+}
+
+.dc-service-page .dc-button:hover {
+    background: #0052cc !important;
+    color: #ffffff !important;
+}
+
+.dc-service-page .dc-button {
+    font-family: Georgia, serif;
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+.dc-service-calendly {
+    background: #E2D5C7;
+
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+
+    border-top: 10px solid #ffffff;
+    padding-bottom: 10px;  
+}
+
+.dc-service-calendly h2 {
+    font-size: 38px;
+    font-weight: normal;
+    margin: 0 0 0 0;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.dc-calendly-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+@media (max-width: 768px) {
+    .dc-calendly-section {
+        padding: 30px 20px;
+    }
+
+    .dc-calendly-section h2 {
+        font-size: 32px;
+        margin-bottom: 24px;
+    }
+
+    .dc-calendly-section summary {
+        font-size: 20px;
+    }
+
+    .dc-calendly-section p {
+        font-size: 16px;
+    }
+}
+
+.dc-related-resources {
+    background: #f4efe9;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    border-top: 10px solid #ffffff;
+    padding: 28px 0 50px;
+}
+
+.dc-related-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.dc-related-resources h2 {
+    text-align: left;
+    font-size: 42px;
+    font-weight: normal;
+    margin: 0 0 36px;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.dc-resource-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    align-items: stretch;
+}
+
+.dc-resource-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: #ffffff;
+    color: #111 !important;
+    text-decoration: none !important;
+}
+
+.dc-resource-card > a {
+    display: block;
+    line-height: 0;
+}
+
+.dc-resource-card:hover {
+    transform: translateY(-3px);
+}
+
+.dc-resource-card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    display: block;
+}
+
+.dc-resource-content {
+    padding: 0 22px 22px;
+}
+
+.dc-resource-content h3 {
+    font-size: 22px;
+    line-height: 1.35;
+    margin: 0 0 14px;
+    color: #111;
+}
+
+.dc-resource-content p {
+    font-size: 16px;
+    line-height: 1.55;
+    margin: 0;
+    color: #111;
+}
+
+.dc-resource-content h3,
+.dc-resource-content h3 a {
+    word-break: normal;
+    overflow-wrap: normal;
+    hyphens: none;
+}
+
+.dc-resource-card a {
+    color: inherit !important;
+    text-decoration: none !important;
+}
+
+.dc-resource-card h3 a:hover {
+    text-decoration: underline !important;
+}
+
+.dc-resource-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+@media (max-width: 768px) {
+    .dc-resource-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .dc-related-resources h2 {
+        font-size: 34px;
+    }
+
+    .dc-resource-card img {
+        height: 200px;
+    }
+}
