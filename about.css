@@ -1,0 +1,78 @@
+.dc-about-box,
+.dc-cert-box {
+    margin-top: 8px;
+}
+
+.dc-about-box p {
+    max-width: 850px;
+    line-height: 1.6;
+}
+
+.dc-cert-grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 16px;
+    align-items: center;
+    justify-items: center;
+}
+
+.dc-cert-grid img {
+    max-width: 90px;
+    max-height: 70px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+.dc-about-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.dc-about-text {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.dc-about-photo {
+    flex: 0 0 220px;
+    text-align: center;
+}
+
+.dc-about-photo img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .dc-cert-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 14px;
+    }
+
+    .dc-cert-grid img {
+        max-width: 70px;
+        max-height: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .dc-about-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .dc-about-text {
+        padding-left: 0;
+    }
+
+    .dc-about-photo img {
+        width: 160px;
+        height: 160px;
+    }
+}
