@@ -567,13 +567,19 @@ button:hover {
     hyphens: none !important;
 }
 
+.dc-custom-menu-wrap {
+    background: #d5eaf6;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+}
+
 .dc-custom-menu {
     max-width: 1200px;
-    margin: 0 auto 8px;
+    margin: 0 auto;
     padding: 10px;
     display: flex;
     gap: 24px;
-    background: #d5eaf6;
 }
 
 .dc-custom-menu a {
