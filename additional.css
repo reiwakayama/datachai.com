@@ -566,3 +566,26 @@ button:hover {
     overflow-wrap: normal !important;
     hyphens: none !important;
 }
+
+.dc-custom-menu {
+    max-width: 1200px;
+    margin: 0 auto 8px;
+    padding: 10px;
+    display: flex;
+    gap: 24px;
+    background: #d5eaf6;
+}
+
+.dc-custom-menu a {
+    color: #071419;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.dc-custom-menu a:hover {
+    text-decoration: underline;
+}
+
+#wp-footer form.search-form {
+    display: none !important;
+}
