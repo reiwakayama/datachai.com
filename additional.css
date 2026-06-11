@@ -176,6 +176,42 @@ body:has(.dc-page) .wrapper_menu {
     margin-bottom: 0;
 }
 
+.dc-service-ppc {
+    display: flex;
+    flex-direction: column;
+}
+
+.dc-service-readmore {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 15px;
+
+    height: 28px;
+    padding: 0 12px;
+
+    background: #f3f3f3;
+    border: 1px solid #071419;
+    border-radius: 3px;
+
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    line-height: 1;
+    font-weight: normal;
+
+    color: #071419 !important;
+    text-decoration: none !important;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.dc-service-readmore:hover {
+    background: #f2f2f2;
+    color: #071419 !important;
+    text-decoration: none !important;
+}
+
 .dc-two-col {
     display: grid;
     grid-template-columns: calc(40% - 5px) calc(60% - 5px);
@@ -594,4 +630,91 @@ button:hover {
 
 #wp-footer form.search-form {
     display: none !important;
+}
+
+.grid .entry,
+.grid article,
+.post-list .entry,
+.post-list article {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid .entry-title,
+.grid .entry-title a,
+.post-list .entry-title,
+.post-list .entry-title a {
+    min-height: 3.4em;
+    display: block;
+}
+
+.grid .entry-title,
+.post-list .entry-title {
+    min-height: 3.4em;
+    margin-bottom: 8px !important;
+}
+
+.grid .entry-summary,
+.grid .entry-content,
+.post-list .entry-summary,
+.post-list .entry-content {
+    margin-top: 0 !important;
+}
+
+/* Category/archive list layout */
+.category article,
+.archive article {
+    min-height: auto !important;
+    padding-bottom: 30px !important;
+}
+
+.category .post-list,
+.archive .post-list {
+    display: block;
+}
+
+.category .entry,
+.archive .entry {
+    overflow: hidden;
+}
+
+/* Blog category pages */
+.category .entry img,
+.archive .entry img,
+.category .eyecatch img,
+.archive .eyecatch img,
+.category .thumbnail img,
+.archive .thumbnail img {
+    width: 260px !important;
+    height: 160px !important;
+    object-fit: cover !important;
+    object-position: center !important;
+}
+
+.category .entry-title,
+.archive .entry-title {
+    margin-bottom: 24px !important;
+}
+
+.category .entry-content,
+.archive .entry-content,
+.category .entry-summary,
+.archive .entry-summary {
+    margin-top: 0 !important;
+    min-height: 0 !important;
+}
+
+.category .read-more,
+.archive .read-more,
+.category .more-link,
+.archive .more-link {
+    margin-top: 20px !important;
+}
+
+.category img.thumbnail,
+.archive img.thumbnail {
+    width: 260px !important;
+    height: 160px !important;
+    object-fit: cover !important;
+    object-position: center !important;
 }
